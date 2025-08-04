@@ -42,7 +42,7 @@ export default function App() {
         });
       }, 200);
 
-      const response = await fetch("http://localhost:8000/upload-pdf/", {
+      const response = await fetch("https://notebooklm-backend-b0yd.onrender.com/upload-pdf/", {
         method: "POST",
         body: formData,
       });
