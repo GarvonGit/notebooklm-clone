@@ -40,7 +40,7 @@ class ChatRequest(BaseModel):
 # ---------- Chat Endpoint using TinyLlama ----------
 @app.post("/chat/")
 def chat_with_pdf(request: ChatRequest):
-    ollama_url = "http://localhost:11434/api/generate"
+    ollama_url = "https://bd147b55c8c9.ngrok-free.app/api/generate"
 
     payload = {
         "model": "tinyllama",  # ✅ using TinyLlama model
